@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Updation</title>
+    <link rel="stylesheet" href="./SCSSFORPROFILE/profile.css">
+    <script src="userprofile.js" defer></script>
+</head>
+<body>
+    <div class="userprofile" id="userprofile">
+            <div class="profile">
+                <h3>Your Profile</h3>
+                <img src="profile.jpg" alt="">
+            </div>
+            <div class="information" id="information">
+                <input type="text" id="nameinput" placeholder="Name...">
+                <input type="text" id="phoneinput" placeholder="Phone Number...">
+                <input type="date" id="DOBinput" placeholder="D-O-B">
+                <input type="text"id="Addressinput" placeholder="City">
+               <div class="buttons">
+                <button id="cancelbtn" onclick="Cancel()">Cancel</button>
+                <button id="savebtn" onclick="saveChanges()">Save Changes</button>
+               </div>
+            </div>
+        </div>
+</body>
+</html>

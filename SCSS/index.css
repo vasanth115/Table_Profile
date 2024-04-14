@@ -1,0 +1,285 @@
+.active {
+  background-color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: auto;
+}
+body .modechange {
+  display: flex;
+  justify-content: space-between;
+}
+body .modechange .title {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+body .modechange button {
+  margin-top: 15px;
+  margin-right: 30px;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #242323;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  border-radius: 5px;
+}
+body .searchbar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+body .searchbar select {
+  padding: 10px 25px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+body .searchbar #searchInput {
+  padding: 8px 55px;
+  border: none;
+  width: 70%;
+  border-bottom: 1px solid #242323;
+  color: #242323;
+  text-align: center;
+}
+body .conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-direction: column;
+}
+body .conatiner .rowperpage {
+  top: 23%;
+  position: static;
+  display: flex;
+  margin-right: 1000px;
+  align-items: center;
+}
+body .conatiner .rowperpage #rowsPerPage {
+  text-align: start;
+  margin-left: 10px;
+  padding: 10px 25px;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+body .conatiner .table {
+  width: 90%;
+  border-collapse: collapse;
+}
+body .conatiner .table .email {
+  color: rgb(21, 120, 159);
+}
+body .conatiner .table th, body .conatiner .table td {
+  border-bottom: 1px solid #ada9a9;
+  text-align: center;
+  padding: 7px 8px;
+}
+body .conatiner .table th #Sorting {
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: #f2f2f2;
+  color: #242323;
+  color: #242323;
+  border: 2px solid #242323;
+}
+body .conatiner .table th #Sorting span {
+  font-size: 20px;
+}
+body .conatiner .table th #sortingID {
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: #f2f2f2;
+  color: #242323;
+  color: #242323;
+  border: 2px solid #242323;
+}
+body .conatiner .table th #namesort {
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: #f2f2f2;
+  color: #242323;
+  color: #242323;
+  border: 2px solid #242323;
+}
+body .conatiner .table th #mobilenumbersort {
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: #f2f2f2;
+  color: #242323;
+  color: #242323;
+  border: 2px solid #242323;
+}
+body .conatiner .table th #emailsort {
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: #f2f2f2;
+  color: #242323;
+  color: #242323;
+  border: 2px solid #242323;
+}
+body .conatiner .table th #dobsort {
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: #f2f2f2;
+  color: #242323;
+  color: #242323;
+  border: 2px solid #242323;
+}
+body .conatiner .table th #citysort {
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: #f2f2f2;
+  color: #242323;
+  color: #242323;
+  border: 2px solid #242323;
+}
+body .conatiner .table tbody tr {
+  font-size: 15px;
+  font-weight: 600;
+}
+body .conatiner .table tbody tr:hover {
+  background-color: #f2f2f2;
+  color: #242323;
+}
+body .conatiner .table .deletebtn {
+  padding: 10px 35px;
+  background-color: rgb(15, 163, 116);
+  color: #f2f2f2;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+body .conatiner .table .deletebtn .bx {
+  font-size: 16px;
+  text-align: center;
+}
+body .conatiner .table .deletebtn:hover {
+  cursor: pointer;
+}
+body .conatiner .table .edit {
+  font-size: 16px;
+}
+body .conatiner .table .edit {
+  padding: 10px 35px;
+  background-color: rgb(15, 163, 116);
+  color: #f2f2f2;
+  border: none;
+  border-radius: 3px;
+}
+body .conatiner .pageitem {
+  margin-top: 20px;
+  margin-right: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .conatiner .pageitem h4 {
+  padding: 0px 10px;
+}
+body .conatiner .pageitem h4 i {
+  font-size: 28px;
+}
+body .conatiner .pageitem #pagination span {
+  padding: 10px;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+body .conatiner .pageitem #pagination span:hover {
+  cursor: pointer;
+  color: #f2f2f2;
+  background-color: #242323;
+}
+
+.light {
+  background: #f2f2f2;
+  color: #242323;
+}
+
+.dark {
+  background: #242323;
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  #perpagerow {
+    margin: 10px 0px;
+  }
+  #pageitem {
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  #pageitem #pagination span {
+    padding: 0px 0px;
+  }
+  #pageitem h4 {
+    padding: 0px 4px;
+    font-size: 20px;
+  }
+  #pageitem h4 i {
+    font-size: 25px;
+  }
+  .modechange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modechange #toggle {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .searchbar {
+    align-items: center;
+    flex-direction: column;
+  }
+  .searchbar select, .searchbar #searchInput {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .table {
+    display: block;
+    overflow-x: auto;
+  }
+  .table th, .table td {
+    text-align: center;
+    padding: 10px 24px;
+  }
+  .table th #Sorting {
+    font-size: 8px;
+    padding: 5px 10px;
+  }
+  .table th #Sorting span {
+    font-size: 10px;
+  }
+  .table tbody tr {
+    font-size: 18px;
+    font-weight: 200;
+  }
+  .table tbody tr #DOB {
+    font-size: 13px;
+  }
+  .table .deletebtn {
+    padding: 5px 13px;
+    font-size: 8px;
+  }
+  .table .deletebtn .bx {
+    font-size: 8px;
+  }
+  .table .edit {
+    font-size: 8px;
+  }
+  .table .edit {
+    padding: 5px 13px;
+  }
+}/*# sourceMappingURL=index.css.map */

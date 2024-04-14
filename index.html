@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Profile</title>
+    <link rel="stylesheet" href="./SCSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="table.js" defer></script>
+</head>
+<body class="light">
+   <div class="modechange">
+    <h1 class="title">Volunteers</h1>
+    <button id="toggle">Toggle Mode</button>
+   </div>
+    <div class="searchbar">
+        <select name="" id="optionfilter" onchange="selectionProcess(event)">
+            <option value="All">All</option>
+            <option value="Applied">Applied</option>
+            <option value="Approved">Approved</option>
+        </select>
+        <input type="text" id="searchInput" placeholder=" Global Search ....">
+    </div>
+
+    <div class="conatiner">
+        <div class="rowperpage" id="perpagerow">
+            <h4>Row Per Page</h4>
+            <select id="rowsPerPage">
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+            </select>
+          </div>
+        <table id="table" class="table">
+            <thead>
+                <tr class="headitem">
+                    <th>
+                        <select name="" id="sortingID" class="sort">
+                            <option value="ascending">Id <span class="arrow">&#8593</span></option>
+                            <option value="descending">Id <span class="arrow">&#8595</span></option>
+                        </select>
+                    </th>
+                    <th>
+                        <select name="" id="namesort" class="sort">
+                            <option value="ascending">Name <span class="arrow">&#8593</span></option>
+                            <option value="descending">Name <span class="arrow">&#8595</span></option>
+                        </select>
+                    </th>
+                    <th>
+                        <select name="" id="mobilenumbersort" class="sort">
+                            <option value="ascending">Phone <span class="arrow">&#8593</span></option>
+                            <option value="descending">Phone <span class="arrow">&#8595</span></option>
+                        </select>
+                    </th>
+                    <th>
+                        <select name="" id="emailsort" class="sort">
+                            <option value="ascending">Email <span class="arrow">&#8593</span></option>
+                            <option value="descending">Email <span class="arrow">&#8595</span></option>
+                        </select>
+                    </th>
+                    <th>Status</th>
+                    <th class="sorting">
+                        <select id="Sorting" class="sort">
+                          <option value="ascending">Submitted <span class="arrow">&#8593</span></option>
+                          <option value="descending">Submitted <span class="arrow">&#8595</span></option>
+                        </select>
+                    </th>
+                    <th>
+                    <select id="dobsort"class="sort">
+                        <option value="ascending">D-O-B <span class="arrow">&#8593</span></option>
+                        <option value="descending">D-O-B <span class="arrow">&#8595</span></option>
+                      </select></th>
+                    <th>
+                        <select id="citysort" class="sort">
+                            <option value="ascending">City <span class="arrow">&#8593</span></option>
+                            <option value="descending">City <span class="arrow">&#8595</span></option>
+                          </select></th>
+                    </th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+       <div class="pageitem" id="pageitem">
+        <h4 onclick="pagefirst()"><i class='bx bx-first-page'></i></h4>
+        <h4 id="arrow-left" style="cursor: pointer;" onclick="pageleftchange()">&#60</h4>
+        <div id="pagination"></div>
+        <h4 id="arrow-right" style="cursor: pointer;" onclick="pagerightchange()" >&#62</h4>
+        <h4 onclick="pagelast()"><i class='bx bx-last-page' ></i></h4>
+       </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,111 @@
+.userprofile {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.userprofile .profile {
+  margin-left: 10%;
+}
+.userprofile .profile h3 {
+  font-size: 2.3rem;
+  text-align: center;
+}
+.userprofile .profile img {
+  height: 450px;
+}
+.userprofile .information {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+}
+.userprofile .information input {
+  padding: 13px 80px;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+.userprofile .information #savebtn {
+  width: 40%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(5, 151, 5);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.userprofile .information #cancelbtn {
+  width: 40%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .userprofile {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .userprofile .profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+  }
+  .userprofile .profile img {
+    height: 200px;
+    width: 200px;
+  }
+  .userprofile .information {
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+  .userprofile .information input {
+    padding: 5px 14px;
+    margin-bottom: 10px;
+  }
+  .userprofile .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .userprofile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .userprofile .profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+  }
+  .userprofile .profile img {
+    height: 200px;
+    width: 200px;
+  }
+  .userprofile .information {
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+  .userprofile .information input {
+    padding: 5px 14px;
+    margin-bottom: 10px;
+  }
+  .userprofile .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}/*# sourceMappingURL=profile.css.map */
